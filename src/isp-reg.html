@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" font="montserrat">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+</head>
+<body class="bg-background font-montserrat">
+   <!--Side Nav-->
+   <div class="min-h-screen flex">
+
+    <!-- sidebar -->
+    <div class="invisible md:visible shadow-lg absolute md:relative min-h-screen w-screen md:w-80 sidebar border-r border-fourth bg-secondary text-blue-100 space-y-6 py-7 px-2">
+  
+      <!-- logo -->
+      <a href="#" class="text-white flex items-center space-x-2">
+        <img src="assets/Transparent.png" alt="" height="50px" width="50px">
+        <span class="text-lg font-bold">Retail Proxies</span>
+        <div class="block md:hidden text-white text-4xl top-5 left-4 cursor-pointer flex items-center" onclick="openSidebar()">
+            <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
+        </div>
+      </a>
+  
+      <!-- nav -->
+      <nav>
+        <h1 class="py-2.5 px-4 text-xs text-text font-medium">Proxies</h1>
+        <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+            <a href="index.html" class="">
+                <i class="bi bi-stack pr-2"></i>
+                  Dashboard
+            </a>
+        </div>
+        <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+            <a href="purchase.html" class="">
+                <i class="bi bi-cart-plus pr-2"></i>
+                  Purchase
+                </a>
+        </div>
+        <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+            <a href="residential.html" class="">
+                <i class="bi bi-house-door pr-2"></i>
+                  Residential
+                </a>
+        </div>
+        <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+            <a href="isp-api.html" class="">
+                <i class="bi bi-cloud-check pr-2"></i>
+                  ISP
+                </a>
+        </div>
+        <div class="absolute bottom-0 mx-auto">
+          <div class="mx-2.5">
+            <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Account Details</button>
+        </div>
+        <p class="px-4 text-xs text-text pt-6 w-8/12">© 2022 Retail Proxies LLC.
+            All rights reserved.</p>
+        <footer class="p-4 h-full text-text font-medium text-xs max-h-full align-bottom">
+            <a href="" class="hover:underline">Privacy Policy</a>
+            <a href="" class="hover:underline">Terms of Service</a>
+            <a href="" class="hover:underline">Return Policy</a>
+        </footer>
+        </div>
+      </nav>
+      
+    </div>
+    <div class="flex-1 text-2xl font-bold">
+        <nav class="border-b border-fourth px-2 py-6 rounded items-center bg-secondary">
+            <div class="flex flex-wrap justify-between items-center mx-auto">
+                <span class="visible md:invisible text-white text-4xl top-5 left-4 cursor-pointer flex items-center" onclick="openSidebar()">
+                    <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
+                </span>
+              <div class="flex items-center" id="navbar-default">
+                <ul class=" flex items-center flex-row md:space-x-8 space-x-2 mt-0 text-sm font-medium border-0" id="list">
+                    <li>
+                        <a href=""><img src="assets/notification.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="assets/twitter.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="flex text-white py-2"><img src="assets/discord.svg" alt="" class="pr-4"></a>
+                    </li>
+                    <li class="flex">
+                        <img src="assets/userr.svg" alt="" class="pr-4">
+                        <div>
+                            <h1 class="text-white font-medium">RYAN#3358</h1>
+                            <p class="text-gradient2 font-bold">Pro User</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="login.html"><img src="assets/logout.svg" alt="" class="pr-8"></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+              <div>
+                <h1 class="text-white text-2xl md:m-14 m-4">ISP</h1>
+                </div>
+                <div class="md:flex md:mx-14 mx-4">
+                    <div class="block md:flex md:flex-col w-11/12 md:w-6/12">
+                      <div class="scrollbar-hide overflow-y-auto max-h-[800px] flex flex-col">
+                        <div class="flex">
+                            <div class="w-full mb-6 bg-secondary rounded-lg border border-fourth hover:border-gradient2">
+                                <div class="flex w-full">
+                                    <div class="w-6/12">
+                                        <h5 class="text-xs text-gradient2 font-medium px-4 pt-4">ORDR-289983</h5>
+                                        <h3 class="text-base text-white font-bold px-4 pb-6">Premium ISP</h3>
+                                        <div class="px-4 pb-3">
+                                          <span class="text-5xl font-bold text-white tracking-tight">50</span>
+                                          <span class="text-base font-normal text-gray-500 dark:text-gray-400">IPs</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-6/12 text-right">
+                                      <div class="inline-block flex justify-end">
+                                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 5C0 2.23858 2.23858 0 5 0H48C50.7614 0 53 2.23858 53 5V48C53 50.7614 50.7614 53 48 53H5C2.23858 53 0 50.7614 0 48V5Z" fill="url(#paint0_linear_366_270)"/>
+                                            <g filter="url(#filter0_d_366_270)">
+                                            <path d="M36.4677 22.63L28.6714 16.3975C27.4677 15.43 25.5214 15.43 24.3289 16.3863L16.5327 22.63C15.6552 23.3275 15.0927 24.8012 15.2839 25.9037L16.7802 34.8588C17.0502 36.4563 18.5802 37.75 20.2002 37.75H32.8002C34.4089 37.75 35.9502 36.445 36.2202 34.8588L37.7164 25.9037C37.8964 24.8012 37.3339 23.3275 36.4677 22.63ZM23.5527 32.5525C22.9227 32.5525 22.4277 32.0462 22.4277 31.4275C22.4277 30.8087 22.9339 30.3025 23.5527 30.3025C24.1714 30.3025 24.6777 30.8087 24.6777 31.4275C24.6777 32.0462 24.1714 32.5525 23.5527 32.5525ZM26.9389 32.26C26.9277 32.26 26.9277 32.26 26.9164 32.26C26.4552 32.26 26.0839 31.8887 26.0727 31.4387C26.0389 29.92 25.0377 28.9187 23.5189 28.885C23.0577 28.8737 22.6864 28.4913 22.6977 28.0188C22.7089 27.5575 23.0802 27.1975 23.5414 27.1975C23.5527 27.1975 23.5527 27.1975 23.5639 27.1975C25.9827 27.2537 27.7152 28.975 27.7602 31.3938C27.7714 31.8663 27.4114 32.26 26.9389 32.26ZM30.3027 32.26C29.8302 32.26 29.4589 31.8887 29.4477 31.4275C29.4364 30.685 29.3127 29.9762 29.0877 29.3125C28.5139 27.67 27.2877 26.455 25.6452 25.87C24.9814 25.6337 24.2727 25.51 23.5302 25.51C23.0689 25.51 22.6864 25.1275 22.6977 24.655C22.6977 24.1937 23.0802 23.8225 23.5414 23.8225H23.5527C24.4864 23.8337 25.3752 23.9913 26.2077 24.2837C28.3339 25.0375 29.9202 26.6237 30.6739 28.75C30.9664 29.5825 31.1239 30.4825 31.1352 31.405C31.1464 31.8775 30.7752 32.26 30.3027 32.26Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_d_366_270" x="11.2466" y="15.6705" width="30.5034" height="30.0795" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stdDeviation="2"/>
+                                            <feComposite in2="hardAlpha" operator="out"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_366_270"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_366_270" result="shape"/>
+                                            </filter>
+                                            <linearGradient id="paint0_linear_366_270" x1="51.0491" y1="53" x2="1.95092" y2="-1.62227e-06" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0FA9D5"/>
+                                            <stop offset="1" stop-color="#27F19F"/>
+                                            </linearGradient>
+                                            </defs>
+                                            </svg>
+                                    </div>
+                                    <div class="px-4 pt-12">
+                                        <p class="text-base text-text font-medium">Expires 6/2/2022</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                          <div class="w-full mb-6 bg-secondary rounded-lg border border-fourth hover:border-red-400">
+                              <div class="flex w-full">
+                                  <div class="w-6/12">
+                                      <h5 class="text-xs text-red-400 font-medium px-4 pt-4">ORDR-289983</h5>
+                                      <h3 class="text-base text-white font-bold px-4 pb-6">Regular ISP</h3>
+                                      <div class="px-4 pb-3">
+                                        <span class="text-5xl font-bold text-white tracking-tight">50</span>
+                                        <span class="text-base font-normal text-gray-500 dark:text-gray-400">IPs</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-6/12 text-right">
+                                    <div class="inline-block flex justify-end">
+                                      <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 5C0 2.23858 2.23858 0 5 0H48C50.7614 0 53 2.23858 53 5V48C53 50.7614 50.7614 53 48 53H5C2.23858 53 0 50.7614 0 48V5Z" fill="url(#paint0_linear_373_271)"/>
+                                        <g filter="url(#filter0_d_373_271)">
+                                        <path d="M36.4677 22.63L28.6714 16.3975C27.4677 15.43 25.5214 15.43 24.3289 16.3862L16.5327 22.63C15.6552 23.3275 15.0927 24.8012 15.2839 25.9037L16.7802 34.8587C17.0502 36.4562 18.5802 37.75 20.2002 37.75H32.8002C34.4089 37.75 35.9502 36.445 36.2202 34.8587L37.7164 25.9037C37.8964 24.8012 37.3339 23.3275 36.4677 22.63ZM23.5527 32.5525C22.9227 32.5525 22.4277 32.0462 22.4277 31.4275C22.4277 30.8087 22.9339 30.3025 23.5527 30.3025C24.1714 30.3025 24.6777 30.8087 24.6777 31.4275C24.6777 32.0462 24.1714 32.5525 23.5527 32.5525ZM26.9389 32.26C26.9277 32.26 26.9277 32.26 26.9164 32.26C26.4552 32.26 26.0839 31.8887 26.0727 31.4387C26.0389 29.92 25.0377 28.9187 23.5189 28.885C23.0577 28.8737 22.6864 28.4912 22.6977 28.0187C22.7089 27.5575 23.0802 27.1975 23.5414 27.1975C23.5527 27.1975 23.5527 27.1975 23.5639 27.1975C25.9827 27.2537 27.7152 28.975 27.7602 31.3937C27.7714 31.8662 27.4114 32.26 26.9389 32.26ZM30.3027 32.26C29.8302 32.26 29.4589 31.8887 29.4477 31.4275C29.4364 30.685 29.3127 29.9762 29.0877 29.3125C28.5139 27.67 27.2877 26.455 25.6452 25.87C24.9814 25.6337 24.2727 25.51 23.5302 25.51C23.0689 25.51 22.6864 25.1275 22.6977 24.655C22.6977 24.1937 23.0802 23.8225 23.5414 23.8225H23.5527C24.4864 23.8337 25.3752 23.9912 26.2077 24.2837C28.3339 25.0375 29.9202 26.6237 30.6739 28.75C30.9664 29.5825 31.1239 30.4825 31.1352 31.405C31.1464 31.8775 30.7752 32.26 30.3027 32.26Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_373_271" x="11.2466" y="15.6705" width="30.5034" height="30.0795" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_373_271"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_373_271" result="shape"/>
+                                        </filter>
+                                        <linearGradient id="paint0_linear_373_271" x1="51.0491" y1="53" x2="1.95092" y2="-1.62227e-06" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#E44747"/>
+                                        <stop offset="1" stop-color="#F4656D"/>
+                                        </linearGradient>
+                                        </defs>
+                                        </svg>
+                                        
+                                  </div>
+                                  <div class="px-4 pt-12">
+                                      <p class=" text-base text-text font-medium">Expires 6/2/2022</p>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="block md:flex md:flex-col w-11/12 md:w-6/12 md:ml-6">
+                        <div class="w-full bg-secondary rounded-lg">
+                            <h5 class="text-white text-xl px-6 py-6">ISP List</h5>
+                            <div class="px-6">
+                              <div class="px-6">
+                                </div>
+                                <div class="">
+                                  <div class="overflow-y-auto h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full mx-auto bg-third rounded-lg mt-4">
+                                  </div>
+                                </div>
+                                <div class="py-6">
+                                  <div class="block md:flex">
+                                    <button type="button" class="mb-2 md:mb-0 mr-4 text-white bg-gradient-to-r from-gradient1 to-gradient2 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full md:w-6/12 text-center transition ease-in duration-300 hover:-translate-y-1">Manage Subscription</button>
+                                    <button type="button" class="mb-2 md:mb-0 mr-4 text-white border border-gradient2 focus:ring-4 hover:bg-gradient-to-r from-gradient1 to-gradient2 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full md:w-6/12 text-center transition ease-in duration-300 hover:-translate-y-1">Copy</button>
+                                    <button type="button" class="mb-2 md:mb-0 text-white border border-gradient2 focus:ring-4 hover:bg-gradient-to-r from-gradient1 to-gradient2 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full md:w-6/12 text-center transition ease-in duration-300 hover:-translate-y-1">Download</button>
+                                    
+                                  </div>
+                                </div>
+                                
+                            <!--Proxy List-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+      
+    </div>
+    <script type="text/javascript">
+        function dropdown() {
+          document.querySelector("#submenu").classList.toggle("hidden");
+          document.querySelector("#arrow").classList.toggle("rotate-0");
+        }
+        dropdown();
+  
+        function openSidebar() {
+          document.querySelector(".sidebar").classList.toggle("invisible");
+        }
+      </script>
+      
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+</body>
+</html>

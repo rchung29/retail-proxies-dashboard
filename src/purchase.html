@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" font="montserrat">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+</head>
+<body class="bg-background font-montserrat">
+   <!--Side Nav-->
+   <div class="min-h-screen flex">
+
+    <!-- sidebar -->
+    <div class="invisible md:visible shadow-lg absolute md:relative min-h-screen w-screen md:w-80 sidebar border-r border-fourth bg-secondary text-blue-100 space-y-6 py-7 px-2">
+  
+        <!-- logo -->
+        <a href="#" class="text-white flex items-center space-x-2">
+          <img src="assets/Transparent.png" alt="" height="50px" width="50px">
+          <span class="text-lg font-bold">Retail Proxies</span>
+          <div class="block md:hidden text-white text-4xl top-5 left-4 cursor-pointer flex items-center" onclick="openSidebar()">
+              <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
+          </div>
+        </a>
+    
+        <!-- nav -->
+        <nav>
+          <h1 class="py-2.5 px-4 text-xs text-text font-medium">Proxies</h1>
+          <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+              <a href="index.html" class="">
+                  <i class="bi bi-stack pr-2"></i>
+                    Dashboard
+              </a>
+          </div>
+          <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+              <a href="purchase.html" class="">
+                  <i class="bi bi-cart-plus pr-2"></i>
+                    Purchase
+                  </a>
+          </div>
+          <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+              <a href="residential.html" class="">
+                  <i class="bi bi-house-door pr-2"></i>
+                    Residential
+                  </a>
+          </div>
+          <div class="text-sm block m-2 my-4 py-3 px-4 rounded transition duration-200 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:text-white">
+              <a href="isp-api.html" class="">
+                  <i class="bi bi-cloud-check pr-2"></i>
+                    ISP
+                  </a>
+          </div>
+          <div class="absolute bottom-0 mx-auto">
+            <div class="mx-2.5">
+                <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Account Details</button>
+            </div>
+            <p class="px-4 text-xs text-text pt-6 w-8/12">© 2022 Retail Proxies LLC.
+                All rights reserved.</p>
+            <footer class="p-4 h-full text-text font-medium text-xs max-h-full align-bottom">
+                <a href="" class="hover:underline">Privacy Policy</a>
+                <a href="" class="hover:underline">Terms of Service</a>
+                <a href="" class="hover:underline">Return Policy</a>
+            </footer>
+          </div>
+        </nav>
+        
+      </div>
+    <div class="flex-1 text-2xl font-bold">
+        <nav class="border-b border-fourth px-2 py-6 rounded items-center bg-secondary">
+            <div class="flex flex-wrap justify-between items-center mx-auto">
+                <span class="visible md:invisible text-white text-4xl top-5 left-4 cursor-pointer flex items-center" onclick="openSidebar()">
+                    <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
+                </span>
+              <div class="flex items-center" id="navbar-default">
+                <ul class=" flex items-center flex-row md:space-x-8 space-x-2 mt-0 text-sm font-medium border-0" id="list">
+                    <li>
+                        <a href=""><img src="assets/notification.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="assets/twitter.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="flex text-white py-2"><img src="assets/discord.svg" alt="" class="pr-4"></a>
+                    </li>
+                    <li class="flex">
+                        <img src="assets/userr.svg" alt="" class="pr-4">
+                        <div>
+                            <h1 class="text-white font-medium">RYAN#3358</h1>
+                            <p class="text-gradient2 font-bold">Pro User</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="login.html"><img src="assets/logout.svg" alt="" class="pr-8"></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+              <div>
+                <h1 class="text-white text-2xl md:m-14 m-4">Purchase</h1>
+              </div>
+              <div class="h-max w-max">
+                <div class="animatecss w-full grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 grid-flow-row gap-4 md:mx-14 m-4" id="fadeIn">
+                    <div class="p-4 max-w-sm rounded-lg border shadow-md sm:p-8 bg-secondary border-fourth">
+                        <svg width="75" height="75" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-6">
+                            <rect width="55" height="55" rx="27.5" fill="url(#paint0_linear_354_268)"/>
+                            <g filter="url(#filter0_d_354_268)">
+                            <path d="M37.4674 23.63L29.6712 17.3975C28.4674 16.43 26.5212 16.43 25.3287 17.3863L17.5324 23.63C16.6549 24.3275 16.0924 25.8013 16.2837 26.9038L17.7799 35.8588C18.0499 37.4563 19.5799 38.75 21.1999 38.75H33.7999C35.4087 38.75 36.9499 37.445 37.2199 35.8588L38.7162 26.9038C38.8962 25.8013 38.3337 24.3275 37.4674 23.63ZM24.5524 33.5525C23.9224 33.5525 23.4274 33.0462 23.4274 32.4275C23.4274 31.8087 23.9337 31.3025 24.5524 31.3025C25.1712 31.3025 25.6774 31.8087 25.6774 32.4275C25.6774 33.0462 25.1712 33.5525 24.5524 33.5525ZM27.9387 33.26C27.9274 33.26 27.9274 33.26 27.9162 33.26C27.4549 33.26 27.0837 32.8887 27.0724 32.4387C27.0387 30.92 26.0374 29.9188 24.5187 29.885C24.0574 29.8738 23.6862 29.4913 23.6974 29.0188C23.7087 28.5575 24.0799 28.1975 24.5412 28.1975C24.5524 28.1975 24.5524 28.1975 24.5637 28.1975C26.9824 28.2538 28.7149 29.975 28.7599 32.3938C28.7712 32.8663 28.4112 33.26 27.9387 33.26ZM31.3024 33.26C30.8299 33.26 30.4587 32.8887 30.4474 32.4275C30.4362 31.685 30.3124 30.9763 30.0874 30.3125C29.5137 28.67 28.2874 27.455 26.6449 26.87C25.9812 26.6338 25.2724 26.51 24.5299 26.51C24.0687 26.51 23.6862 26.1275 23.6974 25.655C23.6974 25.1938 24.0799 24.8225 24.5412 24.8225H24.5524C25.4862 24.8338 26.3749 24.9913 27.2074 25.2838C29.3337 26.0375 30.9199 27.6238 31.6737 29.75C31.9662 30.5825 32.1237 31.4825 32.1349 32.405C32.1462 32.8775 31.7749 33.26 31.3024 33.26Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_354_268" x="12.2463" y="16.6705" width="30.5034" height="30.0795" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_354_268"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_354_268" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_354_268" x1="52.9755" y1="55" x2="2.02454" y2="-1.68349e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0FA9D5"/>
+                            <stop offset="1" stop-color="#27F19F"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                        <h5 class="text-xs text-gradient2 font-medium">Residential</h5>
+                        <h5 class="mb-6 text-xl font-medium text-gray-500 dark:text-gray-400">Smart</h5>
+                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            <span class="text-3xl font-semibold">$</span>
+                            <span class="text-5xl font-bold tracking-tight">49</span>
+                            <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="my-7 space-y-5">
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">No Expiration Data</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">100+ Million IPs</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">Working on All Sites</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">All in One</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <select id="countries" class="bg-third border font-medium border-fourth text-white text-sm rounded-lg focus:ring-gradient1 focus:border-gradient1 block w-full p-4 mb-4">
+                              <option selected>Choose Plan</option>
+                              <option value="US">5GB</option>
+                            </select> 
+                        </div>
+                        <div class="hero rounded-lg bg-third h-400px flex flex-col px-2 mb-5">
+                            <div class="search-box mx-auto my-auto w-full w-full">
+                                <form class="flex flex-row">
+                                    <input
+                                        class="h-16 bg-third text-white py-2 font-normal font-medium w-full py-1 px-2 outline-none text-sm"
+                                        type="text" placeholder="Coupon Code">
+                                    <span
+                                        class="flex items-center bg-third rounded rounded-l-none border-0 px-3 font-bold text-white">
+                                        <button
+                                            class="border border-gradient1 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:bg-gredient-light text-sm text-white font-medium py-2.5 px-5 rounded transition ease-in duration-300 hover:-translate-y-1">Apply</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Purchase</button>
+                    
+                    </div>
+                    <div class="p-4 w-full max-w-sm rounded-lg border shadow-md sm:p-8 bg-secondary border-fourth">
+                        <svg width="75" height="75" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-6">
+                            <rect width="55" height="55" rx="27.5" fill="url(#paint0_linear_354_269)"/>
+                            <g filter="url(#filter0_d_354_269)">
+                            <path d="M32.19 17H23.81C20.17 17 18 19.17 18 22.81V31.18C18 34.83 20.17 37 23.81 37H32.18C35.82 37 37.99 34.83 37.99 31.19V22.81C38 19.17 35.83 17 32.19 17ZM25.85 31.45C25.85 32.58 24.93 33.5 23.8 33.5C22.67 33.5 21.75 32.58 21.75 31.45C21.75 30.58 22.29 29.85 23.05 29.55V25.26C22.21 24.95 21.6 24.15 21.6 23.2C21.6 21.99 22.59 21 23.8 21C25.01 21 26 21.99 26 23.2C26 24.15 25.39 24.95 24.55 25.26V29.55C25.31 29.85 25.85 30.59 25.85 31.45ZM32.75 33.5C31.62 33.5 30.7 32.58 30.7 31.45C30.7 30.58 31.24 29.85 32 29.55V23.75C32 23.61 31.89 23.5 31.75 23.5H30.62L30.83 23.67C31.15 23.94 31.19 24.41 30.93 24.73C30.78 24.91 30.56 25 30.35 25C30.18 25 30.01 24.94 29.87 24.83L28.07 23.33C27.9 23.18 27.8 22.97 27.8 22.75C27.8 22.53 27.9 22.32 28.07 22.17L29.87 20.67C30.19 20.41 30.66 20.45 30.93 20.77C31.2 21.09 31.15 21.56 30.83 21.83L30.62 22H31.75C32.71 22 33.5 22.79 33.5 23.75V29.55C34.26 29.85 34.8 30.59 34.8 31.45C34.8 32.58 33.88 33.5 32.75 33.5Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_354_269" x="14" y="17" width="27.99" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_354_269"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_354_269" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_354_269" x1="52.9755" y1="55" x2="2.02454" y2="-1.68349e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0FA9D5"/>
+                            <stop offset="1" stop-color="#27F19F"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                            
+                        <h5 class="text-xs text-gradient2 font-medium">ISP</h5>
+                        <h5 class="mb-6 text-xl font-medium text-gray-500 dark:text-gray-400">Premium ISP</h5>
+                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            <span class="text-3xl font-semibold">$</span>
+                            <span class="text-5xl font-bold tracking-tight">49</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="my-7 space-y-5">
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">70-100ms Ping</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">Clean IPs</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">Ashburn Based</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">All in One</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <select id="countries" class="bg-third border font-medium border-fourth text-white text-sm rounded-lg focus:ring-gradient1 focus:border-gradient1 block w-full p-4 mb-4">
+                                <option selected>Choose Plan</option>
+                                <option value="US">5GB</option>
+                              </select> 
+                        </div>
+                        <div class="hero rounded-lg bg-third h-400px flex flex-col px-2 mb-5">
+                            <div class="search-box mx-auto my-auto w-full w-full">
+                                <form class="flex flex-row">
+                                    <input
+                                        class="h-16 bg-third text-white py-2 font-normal font-medium w-full py-1 px-2 outline-none text-sm"
+                                        type="text" placeholder="Coupon Code">
+                                    <span
+                                        class="flex items-center bg-third rounded rounded-l-none border-0 px-3 font-bold text-white">
+                                        <button
+                                            class="border border-gradient1 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:bg-gredient-light text-sm text-white font-medium py-2.5 px-5 rounded transition ease-in duration-300 hover:-translate-y-1">Apply</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Purchase</button>
+                    </div>
+                    <div class="p-4 w-full max-w-sm rounded-lg border shadow-md sm:p-8 bg-secondary border-fourth">
+                        <svg width="75" height="75" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-6">
+                            <rect width="55" height="55" rx="27.5" fill="url(#paint0_linear_354_268)"/>
+                            <g filter="url(#filter0_d_354_268)">
+                            <path d="M37.4674 23.63L29.6712 17.3975C28.4674 16.43 26.5212 16.43 25.3287 17.3863L17.5324 23.63C16.6549 24.3275 16.0924 25.8013 16.2837 26.9038L17.7799 35.8588C18.0499 37.4563 19.5799 38.75 21.1999 38.75H33.7999C35.4087 38.75 36.9499 37.445 37.2199 35.8588L38.7162 26.9038C38.8962 25.8013 38.3337 24.3275 37.4674 23.63ZM24.5524 33.5525C23.9224 33.5525 23.4274 33.0462 23.4274 32.4275C23.4274 31.8087 23.9337 31.3025 24.5524 31.3025C25.1712 31.3025 25.6774 31.8087 25.6774 32.4275C25.6774 33.0462 25.1712 33.5525 24.5524 33.5525ZM27.9387 33.26C27.9274 33.26 27.9274 33.26 27.9162 33.26C27.4549 33.26 27.0837 32.8887 27.0724 32.4387C27.0387 30.92 26.0374 29.9188 24.5187 29.885C24.0574 29.8738 23.6862 29.4913 23.6974 29.0188C23.7087 28.5575 24.0799 28.1975 24.5412 28.1975C24.5524 28.1975 24.5524 28.1975 24.5637 28.1975C26.9824 28.2538 28.7149 29.975 28.7599 32.3938C28.7712 32.8663 28.4112 33.26 27.9387 33.26ZM31.3024 33.26C30.8299 33.26 30.4587 32.8887 30.4474 32.4275C30.4362 31.685 30.3124 30.9763 30.0874 30.3125C29.5137 28.67 28.2874 27.455 26.6449 26.87C25.9812 26.6338 25.2724 26.51 24.5299 26.51C24.0687 26.51 23.6862 26.1275 23.6974 25.655C23.6974 25.1938 24.0799 24.8225 24.5412 24.8225H24.5524C25.4862 24.8338 26.3749 24.9913 27.2074 25.2838C29.3337 26.0375 30.9199 27.6238 31.6737 29.75C31.9662 30.5825 32.1237 31.4825 32.1349 32.405C32.1462 32.8775 31.7749 33.26 31.3024 33.26Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_354_268" x="12.2463" y="16.6705" width="30.5034" height="30.0795" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_354_268"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_354_268" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_354_268" x1="52.9755" y1="55" x2="2.02454" y2="-1.68349e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0FA9D5"/>
+                            <stop offset="1" stop-color="#27F19F"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                        <h5 class="text-xs text-gradient2 font-medium">Residential</h5>
+                        <h5 class="mb-6 text-xl font-medium text-gray-500 dark:text-gray-400">Smart</h5>
+                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            <span class="text-3xl font-semibold">$</span>
+                            <span class="text-5xl font-bold tracking-tight">49</span>
+                            <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="my-7 space-y-5">
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">No Expiration Data</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">100+ Million IPs</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">Working on All Sites</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">All in One</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <select id="countries" class="bg-third border font-medium border-fourth text-white text-sm rounded-lg focus:ring-gradient1 focus:border-gradient1 block w-full p-4 mb-4">
+                                <option selected>Choose Plan</option>
+                                <option value="US">5GB</option>
+                              </select> 
+                        </div>
+                        <div class="hero rounded-lg bg-third h-400px flex flex-col px-2 mb-5">
+                            <div class="search-box mx-auto my-auto w-full w-full">
+                                <form class="flex flex-row">
+                                    <input
+                                        class="h-16 bg-third text-white py-2 font-normal font-medium w-full py-1 px-2 outline-none text-sm"
+                                        type="text" placeholder="Coupon Code">
+                                    <span
+                                        class="flex items-center bg-third rounded rounded-l-none border-0 px-3 font-bold text-white">
+                                        <button
+                                            class="border border-gradient1 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:bg-gredient-light text-sm text-white font-medium py-2.5 px-5 rounded transition ease-in duration-300 hover:-translate-y-1">Apply</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Purchase</button>
+                    </div>
+                    <div class="p-4 w-full max-w-sm rounded-lg border shadow-md sm:p-8 bg-secondary border-fourth">
+                        <svg width="75" height="75" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-6">
+                            <rect width="55" height="55" rx="27.5" fill="url(#paint0_linear_354_268)"/>
+                            <g filter="url(#filter0_d_354_268)">
+                            <path d="M37.4674 23.63L29.6712 17.3975C28.4674 16.43 26.5212 16.43 25.3287 17.3863L17.5324 23.63C16.6549 24.3275 16.0924 25.8013 16.2837 26.9038L17.7799 35.8588C18.0499 37.4563 19.5799 38.75 21.1999 38.75H33.7999C35.4087 38.75 36.9499 37.445 37.2199 35.8588L38.7162 26.9038C38.8962 25.8013 38.3337 24.3275 37.4674 23.63ZM24.5524 33.5525C23.9224 33.5525 23.4274 33.0462 23.4274 32.4275C23.4274 31.8087 23.9337 31.3025 24.5524 31.3025C25.1712 31.3025 25.6774 31.8087 25.6774 32.4275C25.6774 33.0462 25.1712 33.5525 24.5524 33.5525ZM27.9387 33.26C27.9274 33.26 27.9274 33.26 27.9162 33.26C27.4549 33.26 27.0837 32.8887 27.0724 32.4387C27.0387 30.92 26.0374 29.9188 24.5187 29.885C24.0574 29.8738 23.6862 29.4913 23.6974 29.0188C23.7087 28.5575 24.0799 28.1975 24.5412 28.1975C24.5524 28.1975 24.5524 28.1975 24.5637 28.1975C26.9824 28.2538 28.7149 29.975 28.7599 32.3938C28.7712 32.8663 28.4112 33.26 27.9387 33.26ZM31.3024 33.26C30.8299 33.26 30.4587 32.8887 30.4474 32.4275C30.4362 31.685 30.3124 30.9763 30.0874 30.3125C29.5137 28.67 28.2874 27.455 26.6449 26.87C25.9812 26.6338 25.2724 26.51 24.5299 26.51C24.0687 26.51 23.6862 26.1275 23.6974 25.655C23.6974 25.1938 24.0799 24.8225 24.5412 24.8225H24.5524C25.4862 24.8338 26.3749 24.9913 27.2074 25.2838C29.3337 26.0375 30.9199 27.6238 31.6737 29.75C31.9662 30.5825 32.1237 31.4825 32.1349 32.405C32.1462 32.8775 31.7749 33.26 31.3024 33.26Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_354_268" x="12.2463" y="16.6705" width="30.5034" height="30.0795" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_354_268"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_354_268" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_354_268" x1="52.9755" y1="55" x2="2.02454" y2="-1.68349e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0FA9D5"/>
+                            <stop offset="1" stop-color="#27F19F"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                        <h5 class="text-xs text-gradient2 font-medium">Residential</h5>
+                        <h5 class="mb-6 text-xl font-medium text-gray-500 dark:text-gray-400">Smart</h5>
+                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            <span class="text-3xl font-semibold">$</span>
+                            <span class="text-5xl font-bold tracking-tight">49</span>
+                            <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="my-7 space-y-5">
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">No Expiration Data</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">100+ Million IPs</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">Working on All Sites</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">All in One</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <select id="countries" class="bg-third border font-medium border-fourth text-white text-sm rounded-lg focus:ring-gradient1 focus:border-gradient1 block w-full p-4 mb-4">
+                                <option selected>Choose Plan</option>
+                                <option value="US">5GB</option>
+                              </select> 
+                        </div>
+                        <div class="hero rounded-lg bg-third h-400px flex flex-col px-2 mb-5">
+                            <div class="search-box mx-auto my-auto w-full w-full">
+                                <form class="flex flex-row">
+                                    <input
+                                        class="h-16 bg-third text-white py-2 font-normal font-medium w-full py-1 px-2 outline-none text-sm"
+                                        type="text" placeholder="Coupon Code">
+                                    <span
+                                        class="flex items-center bg-third rounded rounded-l-none border-0 px-3 font-bold text-white">
+                                        <button
+                                            class="border border-gradient1 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:bg-gredient-light text-sm text-white font-medium py-2.5 px-5 rounded transition ease-in duration-300 hover:-translate-y-1">Apply</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Purchase</button>
+                    </div>
+                    <div class="p-4 w-full max-w-sm rounded-lg border shadow-md sm:p-8 bg-secondary border-fourth">
+                        <svg width="75" height="75" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-6">
+                            <rect width="55" height="55" rx="27.5" fill="url(#paint0_linear_354_268)"/>
+                            <g filter="url(#filter0_d_354_268)">
+                            <path d="M37.4674 23.63L29.6712 17.3975C28.4674 16.43 26.5212 16.43 25.3287 17.3863L17.5324 23.63C16.6549 24.3275 16.0924 25.8013 16.2837 26.9038L17.7799 35.8588C18.0499 37.4563 19.5799 38.75 21.1999 38.75H33.7999C35.4087 38.75 36.9499 37.445 37.2199 35.8588L38.7162 26.9038C38.8962 25.8013 38.3337 24.3275 37.4674 23.63ZM24.5524 33.5525C23.9224 33.5525 23.4274 33.0462 23.4274 32.4275C23.4274 31.8087 23.9337 31.3025 24.5524 31.3025C25.1712 31.3025 25.6774 31.8087 25.6774 32.4275C25.6774 33.0462 25.1712 33.5525 24.5524 33.5525ZM27.9387 33.26C27.9274 33.26 27.9274 33.26 27.9162 33.26C27.4549 33.26 27.0837 32.8887 27.0724 32.4387C27.0387 30.92 26.0374 29.9188 24.5187 29.885C24.0574 29.8738 23.6862 29.4913 23.6974 29.0188C23.7087 28.5575 24.0799 28.1975 24.5412 28.1975C24.5524 28.1975 24.5524 28.1975 24.5637 28.1975C26.9824 28.2538 28.7149 29.975 28.7599 32.3938C28.7712 32.8663 28.4112 33.26 27.9387 33.26ZM31.3024 33.26C30.8299 33.26 30.4587 32.8887 30.4474 32.4275C30.4362 31.685 30.3124 30.9763 30.0874 30.3125C29.5137 28.67 28.2874 27.455 26.6449 26.87C25.9812 26.6338 25.2724 26.51 24.5299 26.51C24.0687 26.51 23.6862 26.1275 23.6974 25.655C23.6974 25.1938 24.0799 24.8225 24.5412 24.8225H24.5524C25.4862 24.8338 26.3749 24.9913 27.2074 25.2838C29.3337 26.0375 30.9199 27.6238 31.6737 29.75C31.9662 30.5825 32.1237 31.4825 32.1349 32.405C32.1462 32.8775 31.7749 33.26 31.3024 33.26Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_354_268" x="12.2463" y="16.6705" width="30.5034" height="30.0795" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_354_268"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_354_268" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_354_268" x1="52.9755" y1="55" x2="2.02454" y2="-1.68349e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0FA9D5"/>
+                            <stop offset="1" stop-color="#27F19F"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                        <h5 class="text-xs text-gradient2 font-medium">Residential</h5>
+                        <h5 class="mb-6 text-xl font-medium text-gray-500 dark:text-gray-400">Smart</h5>
+                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            <span class="text-3xl font-semibold">$</span>
+                            <span class="text-5xl font-bold tracking-tight">49</span>
+                            <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="my-7 space-y-5">
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">No Expiration Data</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">100+ Million IPs</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">Working on All Sites</span>
+                            </li>
+                            <li class="flex space-x-3 decoration-gray-500">
+                                <!-- Icon -->
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span class="text-base font-normal leading-tight text-gray-500">All in One</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <select id="countries" class="bg-third border font-medium border-fourth text-white text-sm rounded-lg focus:ring-gradient1 focus:border-gradient1 block w-full p-4 mb-4">
+                                <option selected>Choose Plan</option>
+                                <option value="US">5GB</option>
+                              </select> 
+                        </div>
+                        <div class="hero rounded-lg bg-third h-400px flex flex-col px-2 mb-5">
+                            <div class="search-box mx-auto my-auto w-full w-full">
+                                <form class="flex flex-row">
+                                    <input
+                                        class="h-16 bg-third text-white py-2 font-normal font-medium w-full py-1 px-2 outline-none text-sm"
+                                        type="text" placeholder="Coupon Code">
+                                    <span
+                                        class="flex items-center bg-third rounded rounded-l-none border-0 px-3 font-bold text-white">
+                                        <button
+                                            class="border border-gradient1 hover:bg-gradient-to-r from-gradient1 to-gradient2 hover:bg-gredient-light text-sm text-white font-medium py-2.5 px-5 rounded transition ease-in duration-300 hover:-translate-y-1">Apply</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="text-white bg-gradient-to-r from-gradient1 to-gradient2 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-4 inline-flex justify-center w-full text-center transition ease-in duration-300 hover:-translate-y-1">Purchase</button>
+                    </div>
+                    </div>
+                </div>
+                <footer class="align-bottom md:ml-14 m-4 text-text font-medium text-xs">
+                    <a href="" class="hover:underline">Privacy Policy</a>
+                    <a href="" class="hover:underline">Terms of Service</a>
+                    <a href="" class="hover:underline">Return Policy</a>
+                </footer>
+              </div>
+            </div>
+        </div>
+      
+    </div>
+    <script type="text/javascript">
+        function dropdown() {
+          document.querySelector("#submenu").classList.toggle("hidden");
+          document.querySelector("#arrow").classList.toggle("rotate-0");
+        }
+        dropdown();
+  
+        function openSidebar() {
+          document.querySelector(".sidebar").classList.toggle("invisible");
+        }
+      </script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+</body>
+</html>
