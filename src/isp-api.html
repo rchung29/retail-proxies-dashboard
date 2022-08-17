@@ -103,10 +103,10 @@
                 <h1 class="text-white text-2xl md:m-14 m-4">ISP</h1>
                 </div>
                 <div class="md:flex md:mx-14 mx-4">
-                    <div class="block md:flex md:flex-col w-11/12 md:w-6/12">
+                    <div class="block md:flex md:flex-col w-full md:w-6/12">
                       <div class="scrollbar-hide overflow-y-auto max-h-[800px] flex flex-col">
                         <div class="flex">
-                            <div class="w-full mb-6 bg-secondary rounded-lg border border-fourth hover:border-gradient2">
+                            <div class="planActive w-full mb-6 bg-secondary rounded-lg border border-fourth hover:border-gradient2" onclick="borderActive()">
                                 <div class="flex w-full">
                                     <div class="w-6/12">
                                         <h5 class="text-xs text-gradient2 font-medium px-4 pt-4">ORDR-289983</h5>
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                         <div class="flex">
-                          <div class="w-full mb-6 bg-secondary rounded-lg border border-fourth hover:border-red-400">
+                          <div class="planExpired w-full mb-6 bg-secondary rounded-lg border border-fourth hover:border-red-400" onclick="borderExpired()">
                               <div class="flex w-full">
                                   <div class="w-6/12">
                                       <h5 class="text-xs text-red-400 font-medium px-4 pt-4">ORDR-289983</h5>
@@ -194,7 +194,7 @@
                       </div>
                       </div>
                     </div>
-                    <div class="block md:flex md:flex-col w-11/12 md:w-6/12 md:ml-6">
+                    <div class="block md:flex md:flex-col w-full md:w-6/12 md:ml-6">
                         <div class="w-full bg-secondary rounded-lg">
                             <h5 class="text-white text-xl px-6 py-6">Manage Plans</h5>
                             <div class="px-6">
@@ -231,7 +231,6 @@
                                 </div>
                                 <div class="px-6 py-3">
                                   <div class="overflow-y-auto h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full mx-auto bg-third rounded-lg mt-4">
-                                    <h1>Text</h1>
                                   </div>
                                 </div>
                                 <div class="px-6 py-6">
@@ -262,6 +261,14 @@
         function openSidebar() {
           document.querySelector(".sidebar").classList.toggle("invisible");
         }
+        function borderActive(){
+          document.querySelector(".planActive").classList.toggle("border-gradient2")
+        }
+        borderActive;
+        function borderExpired(){
+          document.querySelector(".planExpired").classList.toggle("border-red-400")
+        }
+        bord
       </script>
       
     <script type="text/javascript" src="scripts.js"></script>
